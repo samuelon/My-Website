@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+   
+
+  </head>
+    <!--nav bar  -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#home">Samuel On</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+<!--Header-->
+      <div class="heading-content text-center" id="home">
+        <h5>Hello, I'm</h5>
+        <h1>Samuel On</h1>
+        <p> and this is my porfolio</p>
+        <a href="#about">
+        <div class="scroll-down"></div>
+       </a>
+      </div>
+    
+
+<!--About me-->
+    <div class="about-me" id="about">
+      <div class="profile-img">
+        <img src="./images/ProfilePicture.jpeg" class="rounded-circle img-fluid" alt="...">
+      </div>
+        <div class="about-me-content">
+          <h1 class="title-header"> About me</h1>
+          <br/>
+          <p>My name is Samuel On, and I am graduating from York University for Software Engineering this fall. My focus is React and Java as well as computer security. I have dabbled into C, Express, Spring, RESTful, MYSQL, Figma, python and Java EE. Refer to my resume below for more information. I have worked on a multitude of projects such as an Ecommerce Website, Scapy project, and Console game. The hobbies I enjoy are basketball, snowboarding, bowling, table tennis, dogs and exercising. </p>
+          <a href="./docs/Samuel_On_CyberSecResume2.0.pdf" class="btn btn-info" role="button">Cyber Security Resume</a>
+          <a href="./docs/Samuel_On_DevResume2.0.pdf" class="btn btn-info" role="button">Developer Resume</a>
+        </div>
+    </div>
+
+<!--projects-->
+<div class="projects" id="projects">
+  <h2 class="title-header-project">Projects</h2>
+
+  <div class="project-card">
+    <img class="img-fluid" src="./images/ecommercewebsite.png" alt="website images">
+      <div class="project-content">
+        <h2 class="project-title">Ecommerce Website</h2>
+        <p class="project-desc">
+          For this project, Java Jersey, React, Netlify, and IBM Database were used. I mainly contributed to the frontend development of the project with forms, pages, and api calls. React-redux was used to maintain the state-space. I collaborated with the backend members in solving issues for Java Jersey and Derby db. This project was created in a group of 4, within 1 month.
+        </p>
+        <a href="https://github.com/ChristianAugustyn/EECS-4413-not-amazon-client" class="btn btn-info" role="button">GitHub</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img class="img-fluid" src="./images/scapyProject.png" alt="website images">
+      <div class="project-content">
+        <h2 class="project-title">Scapy Reconnaissance Gathering</h2>
+        <p class="project-desc">
+          For this project, Scapy library in python was used to create an ipv4 scanner that recorded non-invasive reconnaissance data on remote networked devices. Such as whether the device was responsive, IP-ID counter deployed (TCP), port 80 opened, SYN cookie deployed, IP-ID counter(ICMP), and OS deployed. This was tested on real-time IoT devices and creates an CSV file of the recorded data.
+        </p>
+        <a href="https://github.com/samuelon/Scapy-Reconnaissance-Gathering" class="btn btn-info" role="button">GitHub</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img class="img-fluid" src="./images/simodessy.png" alt="website images">
+      <div class="project-content">
+        <h2 class="project-title">Sim Odyssey - Console Game </h2>
+        <p class="project-desc">
+          For this project, Effiel was used. It is a contract-based language derived from C. The goal of the project is to use the Effiel Testing Framework(ETF) to create a copy of the game based on an oracle with a seed random number. The copy made should match the oracles moveset for the same instructions. Designs used included encapsulation, abstraction, inheritance, singleton pattern, and others. 
+        </p>
+        <a href="https://github.com/samuelon/Sim-Odyssey-Console-Game" class="btn btn-info" role="button">GitHub</a>
+        <a href="./docs/SimOdyssey2-Spec.pdf"  target="_blank" class="btn btn-info" role="button">Project Specifications</a>
+    </div>
+  </div>
+
+</div>
+
+<!--Contact me-->
+    <div class="contact" id="contact">
+      <h1 class="title-header-project">contact</h1>
+      <br/>
+      <div class="contact-content">
+        <a href="mailto:samuelon3@outlook.com" class="btn btn-info" role="button">Email Me</a>
+        <a href="tel:4162709058" class="btn btn-info" role="button">Call Me</a>
+        <a href="https://www.linkedin.com/in/samuel-on/" class="btn btn-info" role="button">LinkedIn</a>
+        <a href="https://github.com/samuelon" class="btn btn-info" role="button">GitHub</a>
+      </div>
+    </div>
+      
+    </div>
+  </body>
+</html>
